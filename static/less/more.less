@@ -1,0 +1,169 @@
+@var1: #ffffff;
+@var2: #6dc3f4;
+@var3: #000000;
+@var4: #393d43;
+@var5: #000912;
+@var6: #007aff;
+
+.banner_live {
+  width: 100%;
+  height: 70px;
+  background: @var1;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+}
+
+.main > ul {
+  width: 100%;
+  overflow: hidden;
+  li {
+    float: left;
+    width: 25%;
+    position: relative;
+    a {
+      text-decoration: none;
+    }
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    h3 {
+      color: @var2;
+    }
+    > div {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      z-index: 2;
+      h1 > a {
+        color: @var1;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.main_more {
+  display: inline-block;
+  padding: 10px 20px;
+  background: @var2;
+  color: @var3;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  .main_more_hide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: @var1;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.main .main_bottom {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: @var1;
+  button {
+    padding: 10px 20px;
+    color: @var1;
+    background: @var4;
+    margin: 0 auto;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    font-size: 18px;
+  }
+  button {
+    display: block;
+    width: 100%;
+  }
+}
+
+nav ul:last-child li:nth-child(2) {
+  background: @var3912;
+  a {
+    color: @var1;
+  }
+}
+
+@media (max-width: 1366px) {
+  width: 33.33%;
+}
+
+@media (max-width: 768px) {
+  width: 50%;
+}
+
+@media (max-width: 540px) {
+  width: 100%;
+}
+
+/* 特殊修改 */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  background: #fff
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    background: @var1;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: @var1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: @var1;
+    opacity: 0.8;
+    &-active {
+      background: @var6;
+    }
+  }
+
+}

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link rel="stylesheet" href="static/css/cssreset-min.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]><script src="static/js/html5shiv.min.js"></script><script src="static/js/respond.min.js"></script><![endif]-->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="./index.html"><span></span></a></li>
+        <li>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <div></div>
+        </li>
+        <li><span></span>
+            <div></div>
+        </li>
+        <li><a href="templates/search.html">查找影院</a>
+            <div></div>
+        </li>
+        <li><a href="templates/more.html">IMAX电影</a>
+            <div></div>
+        </li>
+        <li><a href="templates/special.html">IMAX特点</a>
+            <div></div>
+        </li>
+        <div class="header_hide">
+            <p>语言</p>
+            <p>关于IMAX</p>
+            <p>联系我们</p>
+            <p>工作机会</p>
+            <p>
+                <img src="static/img/guWeibo1.png" alt="">
+                <img src="static/img/guweixin1.png" alt="">
+                <img src="static/img/guYouku2.png" alt="">
+            </p>
+        </div>
+    </ul>
+    <ul>
+        <li>
+            <a href="templates/special.html">IMAX特点</a>
+        </li>
+        <li>
+            <a href="templates/more.html">IMAX电影</a>
+        </li>
+        <li>
+            <a href="templates/search.html">查找影院</a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="static/img/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="static/img/banner3.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: '.swiper-pagination',
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        //分页的类型
+        // paginationType : 'progress',
+        //小圆点是否能点击
+        paginationClickable: true,
+        //当前让几张图片显示
+        slidesPerView: 4,
+        //设定margin值
+        spaceBetween: 0,
+        loop: true,
+        //设置各种视口下的样式
+        breakpoints: {
+            1366: {
+                slidesPerView: 3
+                // spaceBetween: 40
+            },
+            768: {
+                slidesPerView: 2
+                // spaceBetween: 30
+            }
+
+        }
+    });
+    var n = -$('.swiper-slide').width() * 3;
+    $('.swiper-wrapper').css({
+        'transform': 'translate3d(' + n + 'px, 0px, 0px)'
+    });
+</script>
+<section class="category">
+    <div class="category_top">
+        <img src="static/img/category1.jpg" alt="">
+        <span class="category_fly"></span>
+        <span class="category_logo"></span>
+        <span class="category_lone">独家</span>
+        <span class="category_more">了解更多</span>
+        <p class="category_info">
+            漫威新英雄全画幅登陆IMAX
+        </p>
+        <p class="category_title">
+            《奇异博士》主创推荐特辑
+        </p>
+    </div>
+    <div class="category_bottom">
+        <span class="category_logo"><img src="static/img/logo-home.png" alt=""></span>
+        <span class="category_lone">独家</span>
+        <p class="category_title">《奇异博士》主创推荐特辑</p>
+        <p class="category_info">漫威新英雄全画幅登陆IMAX</p>
+        <span class="category_more">了解更多</span>
+    </div>
+    <div class="category_top">
+        <img src="static/img/category2.jpg" alt="">
+        <span class="category_fly"></span>
+        <span class="category_logo"></span>
+        <span class="category_lone">独家</span>
+        <span class="category_more">了解更多</span>
+        <p class="category_info">
+            《但丁密码》IMAX独家预告片
+        </p>
+        <p class="category_title">
+            跨越穿梭时空的烧脑风暴
+        </p>
+    </div>
+    <div class="category_bottom">
+        <span class="category_logo"><img src="static/img/logo-home.png" alt=""></span>
+        <span class="category_lone">独家</span>
+        <p class="category_title">跨越穿梭时空的烧脑风暴</p>
+        <p class="category_info">《但丁密码》IMAX独家预告片</p>
+        <span class="category_more">了解更多</span>
+    </div>
+</section>
+<section class="main">
+    <ul class="main_left">
+        <li>
+            <p><a href="javascript:;">影讯</a></p>
+            <p><a href="javascript:;">2016年10月21日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">国内首发！全国十城万达IMAX影院超前先睹《奇异博士》高能片段</a></p>
+            <p><a href="javascript:;">2016年10月13日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">《但丁密码》IMAX专属海报</a></p>
+            <p><a href="javascript:;">2016年09月30日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">十月佳片重磅出击</a></p>
+            <p><a href="javascript:;">2016年09月06日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">《爵迹》IMAX独家全套剧照惊艳曝光</a></p>
+            <p><a href="javascript:;">2016年08月05日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">IMAX8月邀您体验非凡冒险</a></p>
+            <p><a href="javascript:;">2016年08月02日</a></p>
+        </li>
+        <li>
+            <p><a href="javascript:;">《盗墓笔记》抢先4小时登陆IMAX</a></p>
+            <p><a href="javascript:;">2016年07月13日</a></p>
+        </li>
+    </ul>
+    <ul class="main_right">
+        <li>
+            <span></span>
+            <div>
+                <p><a href="javascript:;">国内首发！全国十城万达IMAX影院超前先睹《奇异博士》高能片段</a></p>
+                <p><a href="javascript:;">十城联动 眼界大开</a></p>
+                <p><a href="javascript:;">马上参与</a></p>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div>
+                <p><a href="javascript:;">国内首发！全国十城万达IMAX影院超前先睹《奇异博士》高能片段</a></p>
+                <p><a href="javascript:;">十城联动 眼界大开</a></p>
+                <p><a href="javascript:;">马上参与</a></p>
+            </div>
+        </li>
+    </ul>
+</section>
+<script>
+    function init() {
+        var aH = ($('.main_left').innerHeight() - 20) / 2;
+        var dH = $('.main_right li>div').innerHeight();
+        var h = aH - dH;
+        $('.main_right li>span').height(h);
+    }
+
+    init();
+    $(window).resize(init);
+</script>
+<footer>
+    <div class="footer_icon">
+        <div>
+            <a href="javascript:;"><img src="static/img/guWibo2.png" alt=""></a>
+            <a href="javascript:;"><img src="static/img/guWixin2.png" alt=""></a>
+            <a href="javascript:;"><img src="static/img/guYouku.png" alt=""></a>
+        </div>
+    </div>
+    <p>IMAX®和The IMAX Experience®是IMAX公司的注册商标</p>
+    <p>
+        <a href="javascript:;">使&nbsp;用&nbsp;条&nbsp;款</a>
+        <a href="javascript:;">隐&nbsp;私&nbsp;政&nbsp;策</a>
+    </p>
+    <p>
+                <span>
+                <img src="static/img/new-china-license.png" alt=""/>
+                <a href="javascript:;">沪ICP备11045714号</a>
+                </span>
+        <span>
+                <img src="static/img/ghs.png" alt=""/>
+                <a href="javascript:;">沪公网安备 31010102002067号</a>
+                </span>
+    </p>
+
+</footer>
+<script src="static/js/init.js"></script>
+</body>
+</html>

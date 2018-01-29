@@ -1,0 +1,206 @@
+body, nav {
+    width: 100%;
+    background: #d5d5d5;
+    box-sizing: border-box
+}
+
+body, nav, nav div.header_hide {
+    box-sizing: border-box
+}
+
+body {
+    padding: 0 20px 20px;
+    font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+nav {
+    padding: 0 20px;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100
+}
+
+nav a {
+    text-decoration: none;
+    color: #000
+}
+
+nav ul li {
+    cursor: pointer
+}
+
+nav ul:first-child {
+    height: 60px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc
+}
+
+nav ul:first-child li {
+    height: 100%;
+    float: right;
+    width: 100px;
+    text-align: center;
+    line-height: 60px;
+    border-left: 1px solid #ccc;
+    position: relative
+}
+
+nav ul:first-child li a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+nav ul:first-child li > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background: #000912;
+    z-index: -1
+}
+
+nav ul:first-child li:nth-child(1) {
+    width: 106px;
+    float: left;
+    border-left: none
+}
+
+nav div.header_hide {
+    position: absolute;
+    top: 60px;
+    width: 325px;
+    height: auto;
+    right: 20px;
+    background: #d5d5d5;
+    z-index: -1;
+    display: none;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa
+}
+
+nav div.header_hide > p {
+    text-align: right;
+    padding: 15px 20px;
+    color: #000;
+    font-weight: 700;
+    border-top: 1px solid #aaa;
+    cursor: pointer
+}
+
+nav div.header_hide > p:last-child {
+    text-align: center;
+    cursor: auto
+}
+
+nav div.header_hide > p img {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 20px;
+    cursor: pointer
+}
+
+nav ul:first-child li:nth-child(1) span {
+    display: block;
+    width: 100%;
+    height: 43px;
+    background: url(../img/logo.png) left top;
+    background-size: 106px 86px;
+    margin: 8.5px 0;
+    transition: all .5s ease 0s
+}
+
+nav ul:first-child li:nth-child(1):hover span {
+    background-position: left bottom
+}
+
+.nav_hover {
+    color: #fff
+}
+
+nav ul:first-child li:nth-child(2), nav ul:first-child li:nth-child(3) {
+    width: 60px
+}
+
+nav ul:first-child li:nth-child(3) span {
+    display: block;
+    width: 44px;
+    height: 27px;
+    background: url(../img/fd.png) 0 -50px no-repeat;
+    margin: 16.5px auto
+}
+
+nav ul:first-child li:nth-child(2) span.line {
+    width: 30px;
+    height: 2px;
+    background: #000;
+    margin: 10px auto 0;
+    display: block
+}
+
+nav ul:first-child li:nth-child(2) span.line:first-child {
+    margin-top: 17px
+}
+
+nav ul:first-child li:nth-child(2):hover span, nav ul:first-child li:nth-child(3):hover span {
+    background-position: 0 -25px
+}
+
+nav ul:last-child {
+    width: 100%;
+    overflow: hidden;
+    display: none
+}
+
+nav ul:last-child li {
+    width: 33.33%;
+    float: left
+}
+
+nav ul:last-child li a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    line-height: 42px
+}
+
+@media (max-width: 768px) {
+    .swiper-container {
+        margin-top: 102px
+    }
+
+    nav div.header_hide {
+        top: 102px
+    }
+
+    nav {
+        height: 102px
+    }
+
+    nav ul:last-child {
+        display: block
+    }
+
+    nav ul:first-child li:nth-child(4), nav ul:first-child li:nth-child(5), nav ul:first-child li:nth-child(6) {
+        display: none
+    }
+}
+
+@media (max-width: 540px) {
+    nav div.header_hide {
+        width: 100%;
+        right: 0;
+        padding: 0 20px
+    }
+
+    nav div.header_hide p {
+        text-align: center
+    }
+}
