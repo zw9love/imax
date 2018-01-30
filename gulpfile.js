@@ -76,7 +76,6 @@ gulp.task('webserver', function () {
             //     cert: 'server-cert.pem'
             // },
             // fallback: 'index.html',
-            // path: 'http://localhost:8000/index.html',
             proxies: [
                 {
                     source: '/api',
