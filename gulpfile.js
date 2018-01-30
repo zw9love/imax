@@ -69,13 +69,14 @@ gulp.task('webserver', function () {
             // 自动打开浏览器
             open: true,
             port: 8000,
-            host: '192.168.0.115',
+            // host: '192.168.0.115',
             https: false,
             // https: {
             //     key: 'server-key.pem',
             //     cert: 'server-cert.pem'
             // },
-            fallback: 'index.html',
+            // fallback: 'index.html',
+            // path: 'http://localhost:8000/index.html',
             proxies: [
                 {
                     source: '/api',

@@ -1,23 +1,34 @@
-$(".main_more").hover(function () {
+// $(".main_more").hover(function () {
+//     $(this).find(".main_more_hide").stop().animate({top: "0%"}, "fast")
+// }, function () {
+//     $(this).find(".main_more_hide").stop().animate({top: "100%"}, "fast")
+// });
+
+$('.main').on('mouseenter', 'a.main_more',function () {
+    // console.log($(this))
     $(this).find(".main_more_hide").stop().animate({top: "0%"}, "fast")
-}, function () {
+})
+
+$('.main').on('mouseleave', 'a.main_more',function () {
+    // console.log($(this))
     $(this).find(".main_more_hide").stop().animate({top: "100%"}, "fast")
-});
-var row, list = [{id: 1, src: "img/more1.jpg", info: "但丁密码"}, {id: 2, src: "img/more2.jpg", info: "奇异博士"}, {
+})
+
+var row, list = [{id: 1, src: "../static/img/more1.jpg", info: "但丁密码"}, {id: 2, src: "../static/img/more2.jpg", info: "奇异博士"}, {
     id: 3,
-    src: "img/more3.jpg",
+    src: "../static/img/more3.jpg",
     info: "神奇动物在哪里"
-}, {id: 4, src: "img/more4.jpg", info: "侠盗一号：星球大战外传"}, {id: 5, src: "img/more5.jpg", info: "长城"}, {
+}, {id: 4, src: "../static/img/more4.jpg", info: "侠盗一号：星球大战外传"}, {id: 5, src: "../static/img/more5.jpg", info: "长城"}, {
     id: 6,
-    src: "img/more6.jpg",
+    src: "../static/img/more6.jpg",
     info: "美女与野兽"
-}, {id: 7, src: "img/more7.jpg", info: "逗鸟外传：萌宝满天飞"}, {id: 8, src: "img/more8.jpg", info: "我的战争"}, {
+}, {id: 7, src: "../static/img/more7.jpg", info: "逗鸟外传：萌宝满天飞"}, {id: 8, src: "../static/img/more8.jpg", info: "我的战争"}, {
     id: 9,
-    src: "img/more9.jpg",
+    src: "../static/img/more9.jpg",
     info: "冰川时代5：星际碰撞"
-}, {id: 10, src: "img/more10.jpg", info: "谍影重重5"}, {id: 11, src: "img/more11.jpg", info: "火海凌云"}, {
+}, {id: 10, src: "../static/img/more10.jpg", info: "谍影重重5"}, {id: 11, src: "../static/img/more11.jpg", info: "火海凌云"}, {
     id: 12,
-    src: "img/more12.jpg",
+    src: "../static/img/more12.jpg",
     info: "盗墓笔记"
 }], arr = [];
 
